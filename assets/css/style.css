@@ -1,0 +1,430 @@
+#navbar {
+	width: 100%;
+	height: 100px;
+	font-family: 'Gotham', book;
+}
+
+.navbar-item {
+	display: inline-block;
+	margin-top: 60px;
+	margin-left: 40px;
+	text-decoration: none;
+	padding-bottom: 3px;
+  transition: .2s linear;
+}
+
+.navbar-item:hover {
+	border-bottom: 1.5px solid currentColor;
+	cursor: pointer;
+	transition: .2s linear;
+}
+
+#current-navbar-item {
+	color: #3f3f3f;
+	border-bottom: 2px solid currentColor;
+}
+
+#email-navbar-item {
+	float: right;
+	margin-right: 50px;
+}
+
+#email-navbar-item:hover {
+	border: none;
+	cursor: default;
+}
+
+.email-navbar-icon {
+	text-decoration: none;
+	color: #3f3f3f;
+}
+
+#left-side {
+	margin-top: 3%;
+	width: 40%;
+	height: 58%;
+	float: left;
+	overflow: auto;
+}
+
+#right-side {
+	margin-top: 3%;
+	width: 60%;
+	height: 62%;
+	float: left;
+	font-size: 14px;
+}
+
+.about-content {
+	font-family: 'Gotham', book;
+	line-height: 1.6;
+	height: 80vh;
+	overflow: scroll;
+	color: #3f3f3f;
+}
+
+#me-picture {
+	width: 25%;
+	object-fit: cover;
+	margin: 50px;
+	margin-top: 0;
+	margin-left: 50%;
+	margin-bottom: 40px;
+	transform: translate(-50%, 0);
+	/*animation-name: fade-in-from-right;*/
+	/*animation-duration: 2s;*/
+}
+
+#description {
+	padding: 20%;
+	padding-top: 0;
+	padding-right: 10%;
+	padding-bottom: 0;
+	animation-name: fade-in;
+	animation-duration: 2s;
+}
+
+#description-title {
+	font-weight: 800;
+	font-size: 18px;
+}
+
+#experience-wrapper {
+	margin: 10%;
+	margin-top: 0;
+	margin-left: 5%;
+}
+
+#top-fade:before {
+  	content: '';
+  	width: 55%;
+  	height: 5%;   
+  	position: absolute;
+  	background: linear-gradient(white, transparent 60px);
+}
+
+#bottom-fade:before {
+  	content: '';
+  	width: 55%;
+  	height: 5%;
+  	bottom: 18%;
+  	position: absolute;
+  	background: linear-gradient(transparent 5px, white);
+}
+
+.experience-item {
+	margin-bottom: 40px;
+}
+
+.experience-date {
+	color: #939393;
+	font-size: 16px;
+}
+
+.experience-title {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.link {
+	text-decoration: none;
+	color: #3f3f3f;
+	transition: .2s linear;
+}
+
+.link:hover {
+	background-color: white;
+	transition: .2s linear;
+}
+
+.link.netflix {
+	background-color: rgba(245,86,86,0.3);
+}
+
+.link.netflix:hover {
+	background-color: white;
+	color: rgba(245,86,86,1);
+	transition: .2s linear;
+}
+
+.link.mathworks {
+	background-color: rgba(37,132,244,0.3);
+}
+
+.link.mathworks:hover {
+	background-color: white;
+	color: rgba(0,75,135,1);
+	transition: .2s linear;
+}
+
+.link.codeucate {
+	background-color: rgba(255,240,130,0.6);
+}
+
+.link.codeucate:hover {
+	background-color: white;
+	color: rgba(246,190,0,1);
+	transition: .2s linear;
+}
+
+.link.mu.delta {
+	background-color: rgba(154,48,48,0.3);
+}
+
+.link.mu.delta:hover {
+	background-color: white;
+	color: rgba(154,48,48,1);
+	transition: .2s linear;
+}
+
+.link.uroc {
+	background-color: rgba(25,128,70,0.3);
+}
+
+.link.uroc:hover {
+	background-color: white;
+	color: rgba(25,128,70,0.8);
+	transition: .2s linear;
+}
+
+#footer {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	font-family: 'Gotham', book;
+	bottom: 0;
+	z-index: 5;
+	background-color: white;
+}
+
+.footer-item {
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 20px;
+	text-decoration: none;
+    color: #3f3f3f;
+}
+
+.footer-icon {
+	font-size: 14px;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	text-decoration: none;
+    color: #3f3f3f;
+}
+
+.sidebar-wrapper {
+	position: fixed;
+    z-index: 10;
+	width: 400px;
+	height: 100%;
+	background-color: white;
+	-webkit-transform: translateX(-400px);
+	-webkit-transition: all 0.3s;
+	-moz-transform: translateX(-400px);
+	-moz-transition: all 0.3s;
+	-ms-transform: translateX(-400px);
+	-ms-transition: all 0.3s;
+}
+
+.sidebar-item {
+	font-size: 60px;
+	color: #939393;
+    font-family: 'Gotham', book;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 60px;
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+.sidebar-item:hover {
+  color: #CBE6EF;
+}
+
+#sidebar-button {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	display: none;
+}
+
+.sidebar-icon {
+  display: inline;
+  width: 30px;
+}
+
+#nav-toggle {
+	position: absolute;
+	left: 50%; top: 50%;
+}
+
+#nav-toggle {
+	padding: 60px 30px 15px 15px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 10px;
+	width: 100px;
+	background: #939393;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -30px;
+}
+
+#nav-toggle span:after {
+	bottom: -30px;
+}
+
+.sidebar-wrapper ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.button-active {
+	-webkit-transform: translateX(400px);
+	-moz-transform: translateX(400px);
+	transform: translateX(400px);
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+#main-nav ul {
+  position: absolute;
+  top: 10px;
+}
+
+@keyframes fade-in-from-right {
+	from { opacity: 0; margin-left: 0%; }
+	to { opacity: 1; }
+}
+
+@keyframes fade-in {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@media only screen 
+and (max-device-width : 667px) {
+
+	#sidebar-button {
+		display: block;
+	}
+
+	#navbar {
+		display: none;
+	}
+
+    #email-navbar-item, #hover-prompt, #hover-prompt-pic, .footer-item, #footer {
+    	display: none;
+    }
+
+    .footer-icon {
+    	align-content: center;
+    }
+
+    #cover-trace {
+    	width: 70%;
+    	margin-top: 70%;
+    	margin-left: 0;
+    	order: 1;
+    }
+
+    #body-content {
+    	width: 100%;
+    	display: flex;
+    	justify-content: center;
+    }
+
+    #intro {
+    	display: block;
+    	font-family: 'Gotham', bold;
+    	position: absolute;
+    	width: 75%;
+    	font-size: 80px;
+    	margin-top: 25%;
+    }
+
+    #left-side {
+		margin-top: 25%;
+		width: 90%;
+		height: auto;
+		overflow: none;
+	}
+
+	#right-side {
+		width: 90%;
+	}
+
+	#right-side {
+		margin-top: 3%;
+		width: 60%;
+		height: auto;
+	}
+
+	#emily-pic {
+		width: 50%;
+		padding-bottom: 5%;
+	}
+
+	#description-title {
+		font-size: 70px;
+	}
+
+	#description {
+		font-size: 40px;
+		padding-top: 0;
+		padding-right: 5%;
+		padding-left: 5%;
+		padding-bottom: 0;
+		animation-name: fade-in;
+		animation-duration: 2s;
+	}
+
+	.experience-title {
+		font-size: 60px;
+	}
+
+	.experience-date, .experience-description {
+		font-size: 36px;
+	}
+
+    #about-content-wrapper {
+    	display: flex;
+    	justify-content: center;
+    	flex-wrap: wrap;
+    	width: 100%;
+    }
+
+    #bottom-fade:before {
+	  	display: none;
+	}
+
+	#top-fade:before {
+		display: none;
+	}
+
+}
